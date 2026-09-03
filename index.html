@@ -1,61 +1,85 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FDND Visitekaartje</title>
-    <link rel="stylesheet" href="styles/style.css">
-  </head>
-  <body>
-    
-    <article>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FDND Visitekaartje</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <article>
+    <header>
       
-      <header>
-        
-        <h1>Sami EL Baghdadi</h1>
-        
-        <p class="slogan"><em>Junior Front end Developer</em></p>
-        
-        <button class="expand-button" aria-label="Vergroot of verklein kaart">
-          <svg width="22" height="22" viewBox="0 0 24 24" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <title>Wijzig layout</title>
-            <path d="M9 5H5v4M15 5h4v4M19 15v4h-4M9 19H5v-4"></path>
-            <path d="m5 9 5-5M19 9l-5-5M19 15l-5 5M5 15l5 5"></path>
-          </svg>
-          <svg width="22" height="22" viewBox="0 0 24 24" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M9 4v5H4M15 4v5h5M20 15h-5v5M4 15h5v5"></path>
-          </svg>
-        </button>
+      <h1>Sami EL Baghdadi</h1>
 
-        <button class="language-button" aria-label="Verander taal naar Engels">EN</button>
-        
-      </header>
-  
-      <img src="assets/sami.jpg" alt="" width="" height="800">
+      <p class="slogan">
+        <em>Junior Front-end Developer</em>
+      </p>
 
-      <dl>
-        <dt></dt>
-        <dd><a href="https://github.com/Samielb">Projecten</a></dd>
-        
-        <dt></dt>
-        <dd><a href="https://www.linkedin.com/in/sami-el-baghdadi-82888b263/">linkedin</a></dd>
-        
-        <dt></dt>
-        <dd><a href="mailto:samibaghdadi15@hotmail.com">Email</a></dd>
+      <button class="groot-knop" aria-label="Layout wijzigen">
+        <svg viewBox="0 0 24 24" fill="none"
+             stroke-linecap="round" stroke-linejoin="round">
+          <title>Wijzig layout</title>
+          <path d="M9 5H5v4M15 5h4v4M19 15v4h-4M9 19H5v-4"></path>
+          <path d="m5 9 5-5M19 9l-5-5M19 15l-5 5M5 15l5 5"></path>
+        </svg>
 
-        <dt></dt>
-        <dd><a href="https://wa.me/31640818195" aria-label="WhatsApp">WhatsApp</a></dd>
-        
-        <dt></dt>
-        <dd><a href="https://samielb.github.io/portfolio/" aria-label="portfolio">portfolio</a></dd>
-      </dl>
-  
-      <p class="about-me">About me <br>Ik ben een leergierige Junior Front-end Developer met ervaring in HTML, CSS, PHP en JavaScript. Ik bouw graag moderne en gebruiksvriendelijke websites.
-</p>
-      
-    </article>
+        <svg viewBox="0 0 24 24" fill="none"
+             stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 4v5H4M15 4v5h5M20 15h-5v5M4 15h5v5"></path>
+        </svg>
+      </button>
 
-    <script src="scripts/script.js"></script>
-    
-  </body>
+      <button class="taal-knop" aria-label="Verander taal naar Engels">EN</button>
+    </header>
+
+    <img src="assets/sami.jpg" alt="Sami El Baghdadi">
+
+    <ul class="links">
+      <li>
+        <a href="https://github.com/Samielb" aria-label="GitHub">
+          <img src="assets/icons/github.svg" alt="">
+          <span>GitHub</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="https://www.linkedin.com/in/sami-el-baghdadi-82888b263/" aria-label="LinkedIn">
+          <img src="assets/icons/linkedin.svg" alt="">
+          <span>LinkedIn</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="mailto:samibaghdadi15@hotmail.com" aria-label="E-mail">
+          <img src="assets/icons/email.svg" alt="">
+          <span>E-mail</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="https://wa.me/31640818195" aria-label="WhatsApp">
+          <img src="assets/icons/whatsapp.svg" alt="">
+          <span>WhatsApp</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="https://samielb.github.io/portfolio/" aria-label="Portfolio">
+          <img src="assets/icons/portfolio.svg" alt="">
+          <span>Portfolio</span>
+        </a>
+      </li>
+    </ul>
+
+    <p class="over-mij">
+      About me<br>
+      Ik ben een leergierige Junior Front-end Developer met ervaring in
+      HTML, CSS, PHP en JavaScript. Ik bouw graag moderne en
+      gebruiksvriendelijke websites.
+    </p>
+  </article>
+  <script src="scripts/script.js"></script>
+</body>
 </html>

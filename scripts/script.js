@@ -1,16 +1,16 @@
 /* Stap 1: Selecteer de knop */
-let expandButton = document.querySelector('.expand-button')
+let expandButton = document.querySelector('.groot-knop')
 
 /* Stap 2: Wacht tot iemand op die knop klikt */
 expandButton.addEventListener('click', function() {
 
   /* Stap 3: Verander een class zodra iemand op die knop klikt */
-  document.body.classList.toggle('is-expanded')
+  document.body.classList.toggle('groot')
 })
 
-let languageButton = document.querySelector('.language-button')
+let languageButton = document.querySelector('.taal-knop')
 let slogan = document.querySelector('.slogan em')
-let aboutMe = document.querySelector('.about-me')
+let aboutMe = document.querySelector('.over-mij')
 let isEnglish = false
 
 languageButton.addEventListener('click', function() {
